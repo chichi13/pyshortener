@@ -50,4 +50,4 @@ class RedisStorage:
         self.r.setex(key_name, time, value=f"{data}")
 
 
-storage = LocalStorage() if not settings.REDIS_CONNECTION else RedisStorage()
+storage = RedisStorage() if settings.REDIS_CONNECTION else LocalStorage()

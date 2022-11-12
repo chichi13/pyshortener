@@ -11,7 +11,7 @@ def create_app() -> FastAPI:
         title=settings.PROJECT_NAME,
         version=settings.APP_VERSION,
         docs_url=None if settings.is_prod() else "/docs",
-        redoc_url=None if settings.is_prod() == "prod" else "/redoc",
+        redoc_url=None if settings.is_prod() else "/redoc",
         openapi_url=f"{settings.API_V1_STR}/openapi.json",
     )
     setup_routers(app)

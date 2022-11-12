@@ -11,14 +11,15 @@ router = APIRouter()
 
 @router.get(
     "/{short_code}",
-    status_code=status.HTTP_201_CREATED,
-    response_model=LinkBase,
+    status_code=status.HTTP_302_FOUND,
     name="Redirect to the original URL",
 )
 async def redirect_link(
     short_code: str, db: AsyncSession = Depends(get_db)
 ) -> RedirectResponse:
     response = await crud_get_long_url(db, short_code)
+    # For locust only uncomment that :
+    # return {"response": f"{response}"}
     return RedirectResponse(url=f"{response}", status_code=status.HTTP_302_FOUND)
 
 
