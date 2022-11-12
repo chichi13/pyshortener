@@ -17,8 +17,8 @@ class LocalStorage:
 
     def get_long_url(self, key_name):
         if key_name in self.storage:
-            self.update_keys(key_name)
             key_value = self.storage[key_name].get("long_url")
+            self.update_keys(key_name)
         else:
             key_value = None
 
