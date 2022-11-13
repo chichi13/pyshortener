@@ -14,6 +14,9 @@ import HelloWorld from "./components/HelloWorld.vue";
     />
 
     <div class="wrapper">
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       <HelloWorld msg="You did it!" />
 
       <nav>
