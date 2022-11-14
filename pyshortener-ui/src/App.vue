@@ -5,9 +5,11 @@ import Footer from "./components/ComponentFooter.vue";
 </script>
 
 <template>
-  <Header></Header>
-  <Body></Body>
-  <Footer></Footer>
+  <section class="flex flex-col h-screen">
+    <Header></Header>
+    <Body></Body>
+    <Footer></Footer>
+  </section>
 </template>
 
 <style></style>
