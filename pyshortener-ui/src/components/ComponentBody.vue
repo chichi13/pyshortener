@@ -1,6 +1,6 @@
 <template>
-  <div class="flex h-screen items-center justify-center">
-    <form class="w-5/6 lg:w-2/3 bg-white shadow-md rounded px-8 py-8">
+  <div class="flex flex-grow items-center justify-center">
+    <form class="w-5/6 lg:w-2/3 bg-white shadow-md rounded-lg px-8 py-8">
       <span
         class="block text-center text-gray-700 text-3xl font-semibold mb-2 pb-6"
         >Paste the URL to be shortened</span

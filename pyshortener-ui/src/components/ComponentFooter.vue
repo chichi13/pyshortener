@@ -1,14 +1,13 @@
 <template>
   <footer class="bg-gray-300 content-end">
-    <div
-      class="text-center py-6 px-4 container mx-auto text-gray-500 text-sm mt-12"
-    >
+    <div class="text-center py-6 px-4 container mx-auto text-gray-500 text-sm">
       <div class="md:flex justify-between items-center">
         <div class="mb-4 md:mb-0">
           Built with <span class="text-red-500">♥</span> by
           <a
             class="hover:underline text-gray-600"
             href="https://www.linkedin.com/in/antoine-chiris/"
+            target="_blank"
             >Antoine Chiris</a
           >. Licensed under the MIT License.
         </div>
