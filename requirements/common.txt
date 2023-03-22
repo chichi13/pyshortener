@@ -6,4 +6,4 @@ pydantic[dotenv]==1.10.4
 requests==2.28.2
 psycopg2==2.9.5
 sentry-sdk==1.14.0
-redis==4.4.2
+redis==4.5.3
